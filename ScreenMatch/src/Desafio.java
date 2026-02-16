@@ -42,6 +42,8 @@ public class Desafio {
                 double valorTranferir = cliente.nextDouble();
                 if (saldoConta > valorTranferir) {
                     saldoConta -= valorTranferir;
+                } else {
+                    System.out.println("Saldo insuficiente!");
                 }
                 System.out.println("Valor transferido! Saldo atual: " + saldoConta);
             }
