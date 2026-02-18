@@ -2,25 +2,17 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Movie myMovie = new Movie();
+        myMovie.name = "O poderoso chefão";
+        myMovie.yearOfRelease = 1970;
+        myMovie.duration = 180;
 
-        System.out.printf("Esse é o Screen Match" + "\n");
-        System.out.println("Filme: Top Gun: Maverick");
-
-        int ano = 2022;
-
-
-        System.out.println("Ano de lançamento: " + ano);
-
-        double media = (9.8 + 6.3 + 8.0) /3;
-        System.out.println(media);
-        String sinopse;
-        sinopse = """
-        Filme de aventura com galã dos anos 80
-        """;
-        System.out.println(sinopse);
-
-        int classificacao = (int) (media /2);
-        System.out.println(classificacao);
-
+        myMovie.displayTechnicalSheet();
+        myMovie.evaluate(8);
+        myMovie.evaluate(5);
+        myMovie.evaluate(3);
+        System.out.println(myMovie.sumOfReviews);
+        System.out.println(myMovie.totalReviews);
+        System.out.println(myMovie.avarageRating());
     }
 }
