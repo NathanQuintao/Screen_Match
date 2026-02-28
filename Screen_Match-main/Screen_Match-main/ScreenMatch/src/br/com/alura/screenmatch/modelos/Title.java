@@ -1,6 +1,11 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package br.com.alura.screenmatch.modelos;
 
-public class Movie {
+public class Title {
     private String name;
     private int yearOfRelease;
     private boolean includedInPlan;
@@ -9,26 +14,26 @@ public class Movie {
     private int duration;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getYearOfRelease() {
-        return yearOfRelease;
+        return this.yearOfRelease;
     }
 
     public boolean getIncludedInPlan() {
-        return includedInPlan;
+        return this.includedInPlan;
     }
 
     public int getDuration() {
-        return duration;
+        return this.duration;
     }
 
-    public int getTotalReviews() { //getter usado para buscar valores
-        return totalReviews;
+    public int getTotalReviews() {
+        return this.totalReviews;
     }
 
-    public void setName(String name) { // setter usado para setar valores
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -45,19 +50,16 @@ public class Movie {
     }
 
     public void displayTechnicalSheet() {
-
-        System.out.println("Nome do Filme: " + name);
-        System.out.println("Ano de Lançamento:" + yearOfRelease);
+        System.out.println("Nome do Filme: " + this.name);
+        System.out.println("Ano de Lançamento:" + this.yearOfRelease);
     }
 
     public void evaluate(double note) {
-        sumOfReviews += note;
-        totalReviews++;
+        this.sumOfReviews += note;
+        ++this.totalReviews;
     }
 
     public double avarageRating() {
-        return sumOfReviews / totalReviews;
+        return this.sumOfReviews / (double)this.totalReviews;
     }
-
-
 }
