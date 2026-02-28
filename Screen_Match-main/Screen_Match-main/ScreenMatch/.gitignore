@@ -28,3 +28,10 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# Arquivos compilados do Java (o causador dos conflitos!)
+*.class
+
+# Pastas locais geradas automaticamente pelo IntelliJ
+.idea/
+out/
+*.iml
